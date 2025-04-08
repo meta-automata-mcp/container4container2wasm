@@ -1,0 +1,18 @@
+name: Manual Conversion
+
+on:
+  workflow_dispatch:  # Enables manual trigger via GitHub UI
+
+jobs:
+  run-conversion-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Make script executable
+        run: chmod +x ./run_conversion.sh
+
+      - name: Run conversion script
+        run: ./run_conversion.sh
