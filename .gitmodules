@@ -1,0 +1,3 @@
+[submodule "src/Docker-OSX"]
+  path = src/Docker-OSX
+  url = https://github.com/sickcodes/Docker-OSX.git
